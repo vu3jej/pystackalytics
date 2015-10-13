@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
+import re
 
 try:
     from setuptools import setup
@@ -14,6 +16,15 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
+def get_version(package):
+    """
+    Return package version as listed in `__version__` in `init.py`.
+    """
+    init_py = open(os.path.join(package, '__init__.py')).read()
+    return re.search("^__version__ = ['\"]([^'\"]+)['\"]", init_py, re.MULTILINE).group(1)
+
+package = 'pystackalytics'
+
 requirements = [
     'requests',
 ]
@@ -24,7 +35,7 @@ test_requirements = [
 
 setup(
     name='pystackalytics',
-    version='0.1.0',
+    version=get_version(package),
     description="Python wrapper for Mirantis Stackalytics API.",
     long_description=readme + '\n\n' + history,
     author="Jithesh E J",
