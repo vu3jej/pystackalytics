@@ -11,7 +11,7 @@ pystackalytics
 
 Python wrapper for Mirantis Stackalytics API.
 
-* Free software: ISC license
+* Free software: The MIT License 
 * Documentation: https://pystackalytics.readthedocs.org.
 
 Features
