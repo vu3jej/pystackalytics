@@ -11,8 +11,18 @@ pystackalytics
 
 Python wrapper for Mirantis Stackalytics API.
 
-* Free software: The MIT License 
+* Free software: The MIT License
 * Documentation: https://pystackalytics.readthedocs.org.
+
+Usage
+-----
+
+.. code:: python
+
+        from pystackalytics.pystackalytics import Stackalytics
+        api = Stackalytics()
+        api.companies(release='kilo').stats[1].name
+        # u'Mirantis'
 
 Features
 --------
