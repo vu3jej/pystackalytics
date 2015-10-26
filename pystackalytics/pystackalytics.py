@@ -115,8 +115,8 @@ class Stackalytics(object):
             Launchpad id is mapped.
             metric(Optional[str]): Metric: e.g. ‘commits’, ‘loc’, ‘marks’,
                 ‘emails’
-            start_date(Unix time): When the period starts
-            end_date(Unix time): When the period ends
+            start_date(Optional[Unix time]): When the period starts
+            end_date(Optional[Unix time]): When the period ends
 
         Returns:
             Dotable object: Dictionary accessible using dot notation
@@ -159,8 +159,8 @@ class Stackalytics(object):
             Launchpad id is mapped.
             metric(Optional[str]): Metric: e.g. ‘commits’, ‘loc’, ‘marks’,
                 ‘emails’
-            start_date(Unix time): When the period starts
-            end_date(Unix time): When the period ends
+            start_date(Optional[Unix time]): When the period starts
+            end_date(Optional[Unix time]): When the period ends
 
         Returns:
             Dotable object: Dictionary accessible using dot notation
@@ -205,8 +205,8 @@ class Stackalytics(object):
             Launchpad id is mapped.
             metric(Optional[str]): Metric: e.g. ‘commits’, ‘loc’, ‘marks’,
                 ‘emails’
-            start_date(Unix time): When the period starts
-            end_date(Unix time): When the period ends
+            start_date(Optional[Unix time]): When the period starts
+            end_date(Optional[Unix time]): When the period ends
 
         Returns:
             Dotable object: Dictionary accessible using dot notation
@@ -255,8 +255,8 @@ class Stackalytics(object):
             Launchpad id is mapped.
             metric(Optional[str]): Metric: e.g. ‘commits’, ‘loc’, ‘marks’,
                 ‘emails’
-            start_date(Unix time): When the period starts
-            end_date(Unix time): When the period ends
+            start_date(Optional[Unix time]): When the period starts
+            end_date(Optional[Unix time]): When the period ends
 
         Returns:
             Dotable object: Dictionary accessible using dot notation
@@ -300,8 +300,8 @@ class Stackalytics(object):
             Launchpad id is mapped.
             metric(Optional[str]): Metric: e.g. ‘commits’, ‘loc’, ‘marks’,
                 ‘emails’
-            start_date(Unix time): When the period starts
-            end_date(Unix time): When the period ends
+            start_date(Optional[Unix time]): When the period starts
+            end_date(Optional[Unix time]): When the period ends
 
         Returns:
             Dotable object: Dictionary accessible using dot notation
